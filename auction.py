@@ -91,6 +91,8 @@ def runAuction(V):
 
 def randomAuction(n,M):
     V = [[random.randint(0,M-1) for i in range(n)] for i in range(n)]
+    #V = [[0 if i != n-1 else 100 for i in range(n)] for i in range(n)]
+    #V = np.eye(n)*M
     return runAuction(V)
 
 
