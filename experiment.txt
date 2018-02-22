@@ -1,0 +1,14 @@
+
+var x1 >= 0; var x2 >= 0; var x3 >= 0; var x4 >= 0; var x5 >= 0;
+var x6 >= 0; var x7 >= 0; var x8 >= 0; var x9 >= 0;
+
+maximize sum: 9*x1 + 42*x2 + 9*x3 + 2*x4 + 9*x5 + 4*x6 + 1*x7 + 3*x8 + 1*x9;
+
+s.t. row1: x1 + x2 + x3 = 1;
+s.t. row2: x4 + x5 + x6 = 1;
+s.t. row3: x7 + x8 + x9 = 1;
+s.t. col1: x1 + x4 + x7 = 1;
+s.t. col2: x2 + x5 + x8 = 1;
+s.t. col3: x3 + x6 + x9 = 1;
+
+end;

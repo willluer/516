@@ -1,0 +1,65 @@
+# Sets and Parameters
+########################
+# First we would declare any sets and parameters. We’re not using
+# either of those in this simple example, though.
+
+# Variables
+############
+# Next we declare our decision variables. It’s best to use
+# descriptive names.
+# We can also specify nonnegativity here (if appropriate).
+
+var x1 >= 0; var x2 >= 0; var x3 >= 0; var x4 >= 0; var x5 >= 0;
+var x6 >= 0; var x7 >= 0; var x8 >= 0; var x9 >= 0; var x10 >= 0;
+
+var x11 >= 0; var x12 >= 0; var x13 >= 0; var x14 >= 0; var x15 >= 0;
+var x16 >= 0; var x17 >= 0; var x18 >= 0; var x19 >= 0; var x20 >= 0;
+
+var x21 >= 0; var x22 >= 0; var x23 >= 0; var x24 >= 0; var x25 >= 0;
+var x26 >= 0; var x27 >= 0; var x28 >= 0; var x29 >= 0; var x30 >= 0;
+
+var x31 >= 0; var x32 >= 0; var x33 >= 0; var x34 >= 0; var x35 >= 0;
+var x36 >= 0; var x37 >= 0; var x38 >= 0; var x39 >= 0; var x40 >= 0;
+
+var x41 >= 0; var x42 >= 0; var x43 >= 0; var x44 >= 0; var x45 >= 0;
+var x46 >= 0; var x47 >= 0; var x48 >= 0; var x49 >= 0; var x50 >= 0;
+
+var x51 >= 0; var x52 >= 0; var x53 >= 0; var x54 >= 0; var x55 >= 0;
+var x56 >= 0; var x57 >= 0; var x58 >= 0; var x59 >= 0; var x60 >= 0;
+
+var x61 >= 0; var x62 >= 0; var x63 >= 0; var x64 >= 0; var x65 >= 0;
+var x66 >= 0; var x67 >= 0; var x68 >= 0; var x69 >= 0; var x70 >= 0;
+
+var x71 >= 0; var x72 >= 0; var x73 >= 0; var x74 >= 0; var x75 >= 0;
+var x76 >= 0; var x77 >= 0; var x78 >= 0; var x79 >= 0; var x80 >= 0;
+
+var x81 >= 0; var x82 >= 0; var x83 >= 0; var x84 >= 0; var x85 >= 0;
+var x86 >= 0; var x87 >= 0; var x88 >= 0; var x89 >= 0; var x90 >= 0;
+
+var x91 >= 0; var x92 >= 0; var x93 >= 0; var x94 >= 0; var x95 >= 0;
+var x96 >= 0; var x97 >= 0; var x98 >= 0; var x99 >= 0; var x100 >= 0;
+
+# Objective
+############
+# The objective needs a name, in this case ’profit’
+
+maximize sum: 89*x1 + 42*x2 + 0*x3 + 2*x4 + 24*x5 + 20*x6 + 40*x7 + 37*x8 + 30*x9 + 77*x10;
+
+# Constraints
+##############
+# Each constraint needs a name.
+
+s.t. row1: x1 + x2 + x3 = 1;
+s.t. row2: x4 + x5 + x6 = 1;
+s.t. row3: x7 + x8 + x9 = 1;
+s.t. col1: x1 + x4 + x7 = 1;
+s.t. col2: x2 + x5 + x8 = 1;
+s.t. col3: x3 + x6 + x9 = 1;
+
+
+
+# Remember that we already took care of nonnegativity.
+# End
+######
+# We end the file with an ’end;’ statement
+end;
